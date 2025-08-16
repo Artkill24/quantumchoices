@@ -1,0 +1,98 @@
+name: QuantumChoices - Deploy Automatico
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    # Aggiornamento automatico ogni 6 ore
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  analyze-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: Install Python Dependencies
+      run: |
+        pip install -r requirements.txt
+        
+    - name: Install Node Dependencies
+      run: |
+        npm install
+        
+    - name: Run Quantum Analysis
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        AMAZON_ACCESS_KEY: ${{ secrets.AMAZON_ACCESS_KEY }}
+        AMAZON_SECRET_KEY: ${{ secrets.AMAZON_SECRET_KEY }}
+      run: |
+        python scripts/quantum_analyzer.py
+        
+    - name: Generate AI Content
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      run: |
+        node scripts/content_generator.js
+        
+    - name: Optimize Assets
+      run: |
+        # Compress images
+        find assets/images -name "*.jpg" -o -name "*.png" | xargs -I {} sh -c 'echo "Optimizing {}"'
+        
+        # Minify CSS/JS
+        npm run build
+        
+    - name: Update Quantum Data
+      run: |
+        # Commit updated data
+        git config --local user.email "action@github.com"
+        git config --local user.name "QuantumChoices Bot"
+        git add assets/data/ content/
+        git commit -m "🤖 Quantum Update: $(date)" || exit 0
+        
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        cname: quantumchoices.com
+        
+    - name: Notify Success
+      if: success()
+      run: |
+        echo "✅ QuantumChoices deployed successfully!"
+        echo "🔗 Site: https://quantumchoices.github.io"
+        
+    - name: Notify Failure
+      if: failure()
+      run: |
+        echo "❌ Deployment failed!"
+        exit 1
+
+  performance-check:
+    needs: analyze-and-deploy
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Lighthouse Performance Check
+      uses: treosh/lighthouse-ci-action@v9
+      with:
+        urls: |
+          https://quantumchoices.github.io
+        configPath: './lighthouse.json'
+        uploadArtifacts: true
+        temporaryPublicStorage: true

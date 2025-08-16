@@ -1,0 +1,12 @@
+.env
+node_modules/
+*.log
+.cache/
+dist/
+.DS_Store
+__pycache__/
+*.pyc
+.vscode/
+.idea/
+temp/
+scraping_data/

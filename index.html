@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="it" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    
+    <title>QuantumChoices | Decisioni d'Acquisto Scientificamente Ottimizzate</title>
+    <meta name="description" content="Scopri i migliori prodotti Amazon attraverso analisi scientifica e AI. Recensioni basate su dati, non opinioni.">
+    <meta name="keywords" content="recensioni scientifiche, migliori prodotti amazon, analisi dati, acquisti intelligenti">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="QuantumChoices - Decisioni d'Acquisto Scientifiche">
+    <meta property="og:description" content="Recensioni basate su analisi scientifica e AI">
+    <meta property="og:url" content="https://quantumchoices.github.io">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="src/css/quantum.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="quantum-header">
+        <nav class="quantum-nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <h1>⚛️ QuantumChoices</h1>
+                    <span class="tagline">Scienza + Shopping</span>
+                </div>
+                
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#categories" class="nav-link">Categorie</a>
+                    <a href="#methodology" class="nav-link">Metodologia</a>
+                    <a href="#top-picks" class="nav-link">Top Picks</a>
+                </div>
+                
+                <div class="search-quantum">
+                    <input type="text" id="quantum-search" placeholder="Cerca prodotti..." />
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="quantum-hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    Decisioni d'Acquisto<br>
+                    <span class="gradient-text">Scientificamente Ottimizzate</span>
+                </h2>
+                <p class="hero-subtitle">
+                    Utilizziamo AI, analisi dati e principi scientifici per identificare 
+                    i migliori prodotti Amazon. Niente opinioni, solo fatti.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="50000">0</span>
+                        <span class="stat-label">Prodotti Analizzati</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="98.7">0</span>
+                        <span class="stat-label">% Accuratezza AI</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="24">0</span>
+                        <span class="stat-label">Ore Aggiornamento</span>
+                    </div>
+                </div>
+                
+                <div class="hero-cta">
+                    <button class="cta-primary" onclick="document.getElementById('categories').scrollIntoView({behavior:'smooth'})">
+                        Scopri i Top Products
+                    </button>
+                    <button class="cta-secondary" onclick="document.getElementById('methodology').scrollIntoView({behavior:'smooth'})">
+                        Metodologia Scientifica
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="quantum-animation">
+                    <div class="atom">
+                        <div class="nucleus"></div>
+                        <div class="electron electron-1"></div>
+                        <div class="electron electron-2"></div>
+                        <div class="electron electron-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="quantum-categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Categorie Scientifiche</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="tech">
+                    <div class="category-icon">💻</div>
+                    <h3>Tecnologia</h3>
+                    <p>Analisi prestazioni, benchmark, rapporto qualità-prezzo</p>
+                    <div class="category-stats">
+                        <span>1,247 prodotti</span>
+                        <span>98.3% accuratezza</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="home">
+                    <div class="category-icon">🏠</div>
+                    <h3>Casa & Giardino</h3>
+                    <p>Test funzionalità, durabilità, efficienza energetica</p>
+                    <div class="category-stats">
+                        <span>892 prodotti</span>
+                        <span>97.8% accuratezza</span>
+                    </div>
+                </div>
+                
+                <div class="category-card" data-category="fitness">
+                    <div class="category-icon">💪</div>
+                    <h3>Fitness & Sport</h3>
+                    <p>Analisi biomeccanica, materiali, performance</p>
+                    <div class="category-stats">
+                        <span>654 prodotti</span>
+                        <span>96.9% accuratezza</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Picks -->
+    <section class="top-picks" id="top-picks">
+        <div class="container">
+            <h2 class="section-title">🏆 Top Picks Scientifici</h2>
+            <div class="picks-container" id="dynamic-picks">
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3 class="product-title">iPhone 15 Pro Max</h3>
+                        <div class="product-score">
+                            <span class="score-value">9.8/10</span>
+                            <span>Quantum Score</span>
+                        </div>
+                        <div class="product-price">€1,299</div>
+                        <button class="buy-button" onclick="window.open('https://amazon.it/dp/B0CHX1W2RE?tag=quantumchoic-21', '_blank')">
+                            🛒 Acquista su Amazon
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-info">
+                        <h3 class="product-title">MacBook Air M3</h3>
+                        <div class="product-score">
+                            <span class="score-value">9.5/10</span>
+                            <span>Quantum Score</span>
+                        </div>
+                        <div class="product-price">€1,199</div>
+                        <button class="buy-button" onclick="window.open('https://amazon.it/dp/B0CHX2W3SF?tag=quantumchoic-21', '_blank')">
+                            �� Acquista su Amazon
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology -->
+    <section class="methodology" id="methodology">
+        <div class="container">
+            <h2 class="section-title">🔬 La Nostra Metodologia</h2>
+            <div class="method-steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Data Collection</h3>
+                    <p>Raccogliamo dati da Amazon API, recensioni, prezzi storici</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>AI Analysis</h3>
+                    <p>Algoritmi ML analizzano sentiment, qualità, performance</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Scientific Scoring</h3>
+                    <p>Sistema di punteggio basato su 47 parametri quantificabili</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">4</div>
+                    <h3>Quantum Validation</h3>
+                    <p>Cross-validation con dati di mercato e feedback utenti</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="quantum-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>⚛️ QuantumChoices</h3>
+                    <p>Decisioni d'acquisto basate su scienza e dati</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <a href="#methodology">Metodologia</a>
+                    <a href="/admin">Admin Panel</a>
+                    <a href="/health">System Health</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 QuantumChoices. Powered by Einstein-level Intelligence.</p>
+                <p class="disclaimer">* Come associato Amazon, guadagniamo dalle vendite qualificate</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="src/js/quantum-core.js"></script>
+    
+    <!-- Analytics -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "quantumchoices",
+  "version": "1.0.0",
+  "description": "AI-Powered Affiliate Marketing Platform con Approccio Scientifico",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "node scripts/build.js",
+    "deploy": "gh-pages -d dist",
+    "scrape": "node scripts/amazon-scraper.js",
+    "generate": "node scripts/ai-content-generator.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "openai": "^4.20.0",
+    "node-cron": "^3.0.0",
+    "express": "^4.18.0",
+    "puppeteer": "^21.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}

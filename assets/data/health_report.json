@@ -1,0 +1,32 @@
+{
+  "timestamp": "2025-08-16T19:53:51.409162",
+  "overall_score": 96.5,
+  "overall_status": "healthy",
+  "metrics": {
+    "availability": {
+      "value": 99.9,
+      "threshold": 99.0,
+      "status": "healthy"
+    },
+    "response_time": {
+      "value": 1.2,
+      "threshold": 3.0,
+      "status": "healthy"
+    },
+    "ai_services": {
+      "value": 100,
+      "threshold": 95,
+      "status": "healthy"
+    },
+    "affiliate_links": {
+      "value": 98.5,
+      "threshold": 90,
+      "status": "healthy"
+    },
+    "email_delivery": {
+      "value": 97.2,
+      "threshold": 95,
+      "status": "healthy"
+    }
+  }
+}

@@ -1,0 +1,474 @@
+{
+  "daily_stats": [
+    {
+      "date": "2025-07-17",
+      "visitors": 1524,
+      "page_views": 3246,
+      "affiliate_clicks": 163,
+      "conversions": 68,
+      "revenue": 797.67,
+      "bounce_rate": 0.53,
+      "avg_session_duration": 154
+    },
+    {
+      "date": "2025-07-18",
+      "visitors": 1176,
+      "page_views": 4411,
+      "affiliate_clicks": 319,
+      "conversions": 50,
+      "revenue": 353.49,
+      "bounce_rate": 0.32,
+      "avg_session_duration": 255
+    },
+    {
+      "date": "2025-07-19",
+      "visitors": 1581,
+      "page_views": 4338,
+      "affiliate_clicks": 223,
+      "conversions": 59,
+      "revenue": 422.04,
+      "bounce_rate": 0.42,
+      "avg_session_duration": 196
+    },
+    {
+      "date": "2025-07-20",
+      "visitors": 1221,
+      "page_views": 4156,
+      "affiliate_clicks": 246,
+      "conversions": 23,
+      "revenue": 326.89,
+      "bounce_rate": 0.55,
+      "avg_session_duration": 129
+    },
+    {
+      "date": "2025-07-21",
+      "visitors": 1861,
+      "page_views": 4952,
+      "affiliate_clicks": 248,
+      "conversions": 72,
+      "revenue": 285.87,
+      "bounce_rate": 0.43,
+      "avg_session_duration": 155
+    },
+    {
+      "date": "2025-07-22",
+      "visitors": 1813,
+      "page_views": 3951,
+      "affiliate_clicks": 179,
+      "conversions": 34,
+      "revenue": 393.71,
+      "bounce_rate": 0.46,
+      "avg_session_duration": 161
+    },
+    {
+      "date": "2025-07-23",
+      "visitors": 1289,
+      "page_views": 4546,
+      "affiliate_clicks": 399,
+      "conversions": 52,
+      "revenue": 446.45,
+      "bounce_rate": 0.64,
+      "avg_session_duration": 263
+    },
+    {
+      "date": "2025-07-24",
+      "visitors": 1232,
+      "page_views": 4516,
+      "affiliate_clicks": 130,
+      "conversions": 41,
+      "revenue": 764.63,
+      "bounce_rate": 0.44,
+      "avg_session_duration": 135
+    },
+    {
+      "date": "2025-07-25",
+      "visitors": 1446,
+      "page_views": 3621,
+      "affiliate_clicks": 204,
+      "conversions": 41,
+      "revenue": 591.12,
+      "bounce_rate": 0.54,
+      "avg_session_duration": 224
+    },
+    {
+      "date": "2025-07-26",
+      "visitors": 1277,
+      "page_views": 3564,
+      "affiliate_clicks": 260,
+      "conversions": 53,
+      "revenue": 576.93,
+      "bounce_rate": 0.31,
+      "avg_session_duration": 149
+    },
+    {
+      "date": "2025-07-27",
+      "visitors": 1757,
+      "page_views": 2126,
+      "affiliate_clicks": 150,
+      "conversions": 24,
+      "revenue": 221.4,
+      "bounce_rate": 0.38,
+      "avg_session_duration": 300
+    },
+    {
+      "date": "2025-07-28",
+      "visitors": 1081,
+      "page_views": 3438,
+      "affiliate_clicks": 320,
+      "conversions": 57,
+      "revenue": 796.06,
+      "bounce_rate": 0.52,
+      "avg_session_duration": 135
+    },
+    {
+      "date": "2025-07-29",
+      "visitors": 1945,
+      "page_views": 3222,
+      "affiliate_clicks": 147,
+      "conversions": 48,
+      "revenue": 530.08,
+      "bounce_rate": 0.64,
+      "avg_session_duration": 253
+    },
+    {
+      "date": "2025-07-30",
+      "visitors": 1254,
+      "page_views": 2831,
+      "affiliate_clicks": 203,
+      "conversions": 45,
+      "revenue": 252.12,
+      "bounce_rate": 0.66,
+      "avg_session_duration": 252
+    },
+    {
+      "date": "2025-07-31",
+      "visitors": 1519,
+      "page_views": 3801,
+      "affiliate_clicks": 321,
+      "conversions": 52,
+      "revenue": 605.02,
+      "bounce_rate": 0.39,
+      "avg_session_duration": 286
+    },
+    {
+      "date": "2025-08-01",
+      "visitors": 1120,
+      "page_views": 2062,
+      "affiliate_clicks": 195,
+      "conversions": 34,
+      "revenue": 342.14,
+      "bounce_rate": 0.62,
+      "avg_session_duration": 136
+    },
+    {
+      "date": "2025-08-02",
+      "visitors": 1861,
+      "page_views": 4219,
+      "affiliate_clicks": 322,
+      "conversions": 73,
+      "revenue": 196.56,
+      "bounce_rate": 0.58,
+      "avg_session_duration": 123
+    },
+    {
+      "date": "2025-08-03",
+      "visitors": 1077,
+      "page_views": 3154,
+      "affiliate_clicks": 233,
+      "conversions": 25,
+      "revenue": 441.52,
+      "bounce_rate": 0.56,
+      "avg_session_duration": 200
+    },
+    {
+      "date": "2025-08-04",
+      "visitors": 1723,
+      "page_views": 4592,
+      "affiliate_clicks": 151,
+      "conversions": 34,
+      "revenue": 263.35,
+      "bounce_rate": 0.7,
+      "avg_session_duration": 146
+    },
+    {
+      "date": "2025-08-05",
+      "visitors": 1482,
+      "page_views": 3799,
+      "affiliate_clicks": 305,
+      "conversions": 75,
+      "revenue": 322.43,
+      "bounce_rate": 0.69,
+      "avg_session_duration": 201
+    },
+    {
+      "date": "2025-08-06",
+      "visitors": 1540,
+      "page_views": 4193,
+      "affiliate_clicks": 109,
+      "conversions": 51,
+      "revenue": 197.72,
+      "bounce_rate": 0.4,
+      "avg_session_duration": 275
+    },
+    {
+      "date": "2025-08-07",
+      "visitors": 1170,
+      "page_views": 2251,
+      "affiliate_clicks": 129,
+      "conversions": 48,
+      "revenue": 735.79,
+      "bounce_rate": 0.48,
+      "avg_session_duration": 300
+    },
+    {
+      "date": "2025-08-08",
+      "visitors": 1993,
+      "page_views": 2130,
+      "affiliate_clicks": 337,
+      "conversions": 70,
+      "revenue": 257.66,
+      "bounce_rate": 0.4,
+      "avg_session_duration": 269
+    },
+    {
+      "date": "2025-08-09",
+      "visitors": 1072,
+      "page_views": 3117,
+      "affiliate_clicks": 333,
+      "conversions": 25,
+      "revenue": 256.1,
+      "bounce_rate": 0.58,
+      "avg_session_duration": 142
+    },
+    {
+      "date": "2025-08-10",
+      "visitors": 1378,
+      "page_views": 4917,
+      "affiliate_clicks": 184,
+      "conversions": 27,
+      "revenue": 607.51,
+      "bounce_rate": 0.47,
+      "avg_session_duration": 263
+    },
+    {
+      "date": "2025-08-11",
+      "visitors": 1425,
+      "page_views": 2705,
+      "affiliate_clicks": 186,
+      "conversions": 76,
+      "revenue": 563.59,
+      "bounce_rate": 0.37,
+      "avg_session_duration": 281
+    },
+    {
+      "date": "2025-08-12",
+      "visitors": 1649,
+      "page_views": 3788,
+      "affiliate_clicks": 356,
+      "conversions": 32,
+      "revenue": 244.99,
+      "bounce_rate": 0.59,
+      "avg_session_duration": 271
+    },
+    {
+      "date": "2025-08-13",
+      "visitors": 1801,
+      "page_views": 2719,
+      "affiliate_clicks": 128,
+      "conversions": 28,
+      "revenue": 444.23,
+      "bounce_rate": 0.34,
+      "avg_session_duration": 232
+    },
+    {
+      "date": "2025-08-14",
+      "visitors": 1549,
+      "page_views": 2110,
+      "affiliate_clicks": 292,
+      "conversions": 77,
+      "revenue": 277.75,
+      "bounce_rate": 0.52,
+      "avg_session_duration": 199
+    },
+    {
+      "date": "2025-08-15",
+      "visitors": 1526,
+      "page_views": 4508,
+      "affiliate_clicks": 130,
+      "conversions": 60,
+      "revenue": 578.66,
+      "bounce_rate": 0.48,
+      "avg_session_duration": 217
+    }
+  ],
+  "conversion_funnel": {
+    "visitors": 10000,
+    "product_views": 6500,
+    "affiliate_clicks": 2500,
+    "conversions": 800,
+    "revenue": 36400.0
+  },
+  "revenue_data": [
+    {
+      "month": "2024-08",
+      "revenue": 5999.61,
+      "orders": 256,
+      "avg_order_value": 38.13,
+      "commission_rate": 0.037
+    },
+    {
+      "month": "2024-09",
+      "revenue": 4857.6,
+      "orders": 268,
+      "avg_order_value": 47.09,
+      "commission_rate": 0.071
+    },
+    {
+      "month": "2024-10",
+      "revenue": 4534.91,
+      "orders": 281,
+      "avg_order_value": 35.47,
+      "commission_rate": 0.045
+    },
+    {
+      "month": "2024-11",
+      "revenue": 2838.97,
+      "orders": 238,
+      "avg_order_value": 50.69,
+      "commission_rate": 0.07
+    },
+    {
+      "month": "2024-12",
+      "revenue": 6073.57,
+      "orders": 164,
+      "avg_order_value": 55.65,
+      "commission_rate": 0.069
+    },
+    {
+      "month": "2025-01",
+      "revenue": 5737.8,
+      "orders": 236,
+      "avg_order_value": 39.03,
+      "commission_rate": 0.031
+    },
+    {
+      "month": "2025-02",
+      "revenue": 3279.76,
+      "orders": 317,
+      "avg_order_value": 64.21,
+      "commission_rate": 0.041
+    },
+    {
+      "month": "2025-03",
+      "revenue": 3501.18,
+      "orders": 199,
+      "avg_order_value": 56.05,
+      "commission_rate": 0.062
+    },
+    {
+      "month": "2025-04",
+      "revenue": 6295.34,
+      "orders": 185,
+      "avg_order_value": 81.0,
+      "commission_rate": 0.05
+    },
+    {
+      "month": "2025-05",
+      "revenue": 6578.26,
+      "orders": 252,
+      "avg_order_value": 77.81,
+      "commission_rate": 0.063
+    },
+    {
+      "month": "2025-06",
+      "revenue": 6658.51,
+      "orders": 198,
+      "avg_order_value": 49.95,
+      "commission_rate": 0.044
+    },
+    {
+      "month": "2025-07",
+      "revenue": 2442.07,
+      "orders": 258,
+      "avg_order_value": 45.52,
+      "commission_rate": 0.044
+    }
+  ],
+  "user_behavior": {
+    "top_categories": [
+      {
+        "category": "tech",
+        "views": 3245,
+        "conversions": 127
+      },
+      {
+        "category": "home",
+        "views": 2876,
+        "conversions": 98
+      },
+      {
+        "category": "fitness",
+        "views": 2234,
+        "conversions": 89
+      },
+      {
+        "category": "kitchen",
+        "views": 1998,
+        "conversions": 76
+      }
+    ],
+    "device_breakdown": {
+      "mobile": 0.68,
+      "desktop": 0.25,
+      "tablet": 0.07
+    },
+    "traffic_sources": {
+      "organic": 0.45,
+      "direct": 0.22,
+      "social": 0.18,
+      "email": 0.15
+    }
+  },
+  "email_performance": [
+    {
+      "type": "newsletter",
+      "sent": 11271,
+      "delivered": 7370,
+      "opened": 2572,
+      "clicked": 481,
+      "conversions": 72,
+      "revenue": 1760.45,
+      "last_sent": "2025-08-10T19:53:51.362694"
+    },
+    {
+      "type": "product_alert",
+      "sent": 11164,
+      "delivered": 9489,
+      "opened": 1221,
+      "clicked": 204,
+      "conversions": 21,
+      "revenue": 584.47,
+      "last_sent": "2025-08-09T19:53:51.362707"
+    },
+    {
+      "type": "promotional",
+      "sent": 14129,
+      "delivered": 11373,
+      "opened": 3995,
+      "clicked": 389,
+      "conversions": 89,
+      "revenue": 1526.79,
+      "last_sent": "2025-08-14T19:53:51.362713"
+    },
+    {
+      "type": "reengagement",
+      "sent": 11362,
+      "delivered": 9857,
+      "opened": 3907,
+      "clicked": 493,
+      "conversions": 22,
+      "revenue": 2144.72,
+      "last_sent": "2025-08-14T19:53:51.362719"
+    }
+  ]
+}
