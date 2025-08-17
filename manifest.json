@@ -1,0 +1,51 @@
+{
+  "name": "QuantumChoices - Scientific Product Reviews",
+  "short_name": "QuantumChoices",
+  "description": "AI-powered scientific product analysis and reviews",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#667eea",
+  "theme_color": "#0066ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Admin Panel",
+      "short_name": "Admin",
+      "description": "Access admin dashboard",
+      "url": "/admin",
+      "icons": [
+        {
+          "src": "assets/images/admin-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Health Monitor",
+      "short_name": "Health",
+      "description": "System health dashboard",
+      "url": "/health",
+      "icons": [
+        {
+          "src": "assets/images/health-icon.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "categories": ["shopping", "productivity", "business"]
+}

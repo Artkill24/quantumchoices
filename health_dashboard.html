@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuantumChoices Health Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .header h1 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .health-score {
+            font-size: 4rem;
+            font-weight: bold;
+            margin: 2rem 0;
+        }
+        
+        .score-excellent { color: #27ae60; }
+        .score-good { color: #f39c12; }
+        .score-warning { color: #e74c3c; }
+        
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .metric-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 4px solid #3498db;
+        }
+        
+        .metric-title {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+        
+        .metric-value {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .metric-status {
+            font-size: 0.875rem;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            display: inline-block;
+            color: white;
+        }
+        
+        .status-healthy { background: #27ae60; }
+        .status-warning { background: #f39c12; }
+        .status-critical { background: #e74c3c; }
+        
+        .last-update {
+            text-align: center;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-top: 2rem;
+        }
+        
+        .refresh-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .refresh-btn:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏥 QuantumChoices Health Dashboard</h1>
+            <p>System Performance & Status Monitoring</p>
+            
+            <div class="health-score score-excellent" id="overall-score">
+                96.5%
+            </div>
+            
+            <div class="metric-status status-healthy" id="overall-status">
+                All Systems Operational
+            </div>
+        </div>
+        
+        <div class="metrics-grid" id="metrics-container">
+            <!-- Metrics will be loaded here -->
+        </div>
+        
+        <button class="refresh-btn" onclick="refreshHealth()">
+            🔄 Refresh Status
+        </button>
+        
+        <div class="last-update" id="last-update">
+            Last updated: Loading...
+        </div>
+    </div>
+    
+    <script>
+        async function loadHealthData() {
+            try {
+                const response = await fetch('/assets/data/health_report.json');
+                const data = await response.json();
+                
+                // Update overall score
+                document.getElementById('overall-score').textContent = data.overall_score.toFixed(1) + '%';
+                document.getElementById('overall-status').textContent = 
+                    data.overall_status === 'healthy' ? 'All Systems Operational' : 
+                    data.overall_status === 'warning' ? 'Minor Issues Detected' : 'Critical Issues';
+                
+                // Update metrics
+                const container = document.getElementById('metrics-container');
+                container.innerHTML = '';
+                
+                Object.entries(data.metrics).forEach(([key, metric]) => {
+                    const card = document.createElement('div');
+                    card.className = 'metric-card';
+                    
+                    card.innerHTML = `
+                        <div class="metric-title">${key.replace(/_/g, ' ').toUpperCase()}</div>
+                        <div class="metric-value">${typeof metric.value === 'number' ? metric.value.toFixed(1) : metric.value}</div>
+                        <div class="metric-status status-${metric.status}">${metric.status.toUpperCase()}</div>
+                        <div style="margin-top: 1rem; font-size: 0.875rem; color: #7f8c8d;">
+                            Threshold: ${metric.threshold}
+                        </div>
+                    `;
+                    
+                    container.appendChild(card);
+                });
+                
+                // Update timestamp
+                document.getElementById('last-update').textContent = 
+                    `Last updated: ${new Date(data.timestamp).toLocaleString()}`;
+                
+            } catch (error) {
+                console.error('Failed to load health data:', error);
+                document.getElementById('overall-status').textContent = 'Failed to Load Data';
+                document.getElementById('overall-status').className = 'metric-status status-critical';
+            }
+        }
+        
+        function refreshHealth() {
+            loadHealthData();
+        }
+        
+        // Load data on page load
+        loadHealthData();
+        
+        // Auto-refresh every 30 seconds
+        setInterval(loadHealthData, 30000);
+    </script>
+</body>
+</html>

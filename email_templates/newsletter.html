@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { max-width: 600px; margin: 0 auto; background: white; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; text-align: center; }
+        .content { padding: 2rem; }
+        .product { border: 1px solid #eee; padding: 1.5rem; margin: 1rem 0; border-radius: 12px; background: #f9f9f9; }
+        .score { background: #3498db; color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-weight: bold; }
+        .price { color: #e74c3c; font-size: 1.25rem; font-weight: bold; }
+        .cta-button { background: #27ae60; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 8px; display: inline-block; margin: 1rem 0; }
+        .footer { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
+        .footer a { color: #3498db; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚛️ QuantumChoices</h1>
+            <h2>{{ subject }}</h2>
+            <p>Decisioni d'acquisto basate su scienza e AI</p>
+        </div>
+        
+        <div class="content">
+            {{ content }}
+            
+            <div style="text-align: center; margin: 2rem 0;">
+                <a href="https://quantumchoices.com" class="cta-button">
+                    🔬 Scopri Altri Prodotti Scientificamente Testati
+                </a>
+            </div>
+            
+            <div style="background: #ecf0f1; padding: 1.5rem; border-radius: 8px; margin: 2rem 0;">
+                <h3>🧬 La Nostra Metodologia Scientifica</h3>
+                <p>Ogni prodotto è analizzato attraverso:</p>
+                <ul>
+                    <li>47 parametri quantificabili</li>
+                    <li>Algoritmi di Machine Learning</li>
+                    <li>Analisi sentiment delle recensioni</li>
+                    <li>Confronto dati storici prezzi</li>
+                    <li>Benchmark di categoria</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2025 QuantumChoices - Built with Einstein-level precision ⚛️</p>
+            <p>
+                <a href="https://quantumchoices.com">Sito Web</a> | 
+                <a href="{{ unsubscribe_url }}">Disiscriviti</a>
+            </p>
+            <p style="font-size: 0.875rem; opacity: 0.8;">
+                Come Associato Amazon, guadagniamo dalle vendite qualificate.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
